@@ -1,0 +1,64 @@
+{
+  "name": "Lanciafiamme",
+  "chamber": {
+    "red": 1
+  },
+  "effects": {
+    "basic": {
+      "name": "Modalità base",
+      "cost": {
+        "red": 1
+      },
+      "subEffect": {
+        "1": {
+          "targetAcq": {
+            "range": {
+              "min": 1,
+              "max": 3
+            },
+            "direction": {},
+            "askPlayer": {
+              "msg": "Seleziona 2 Player sulla stessa direzione",
+              "num": 2,
+              "diffSquare": true
+            }
+          },
+          "shootTarget": {
+            "damage": 1
+          }
+        }
+      }
+    },
+    "alternative": {
+      "name": "Modalità barbecue",
+      "cost": {
+        "yellow": 2
+      },
+      "subEffect": {
+        "1": {
+          "targetAcq": {
+            "range": {
+              "min": 1,
+              "max": 3
+            },
+            "direction": {}
+          },
+          "shootTarget": {
+            "damage": 1
+          }
+        },
+        "2": {
+          "targetAcq": {
+            "range": {
+              "min": 1,
+              "max": 2
+            }
+          },
+          "shootTarget": {
+            "damage": 1
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Vulcanizzatore",
+  "chamber": {
+    "red": 1
+  },
+  "effects": {
+    "basic": {
+      "name": "modalità base",
+      "cost": {
+        "red": 1,
+        "blue": 1
+      },
+      "subEffect": {
+        "1": {
+          "targetAcq": {
+            "isVisible": {
+              "visible": true
+            },
+            "different": ["myRoom"],
+            "askPlayer": {
+              "msg": "Seleziona 1 Player la cui stanza verrà colpita",
+              "num": 1
+            },
+            "substitute": ["room"]
+          },
+          "shootTarget": {
+            "damage": 1
+          }
+        }
+      }
+    },
+    "alternative": {
+      "name": "modalità fuoco confortevole",
+      "cost": {},
+      "subEffect": {
+        "1": {
+          "targetAcq": {
+            "isVisible": {
+              "visible": true
+            },
+            "range": {
+              "min": 1,
+              "max": 2
+            },
+            "askPlayer": {
+              "msg": "Seleziona 1 Player il cui quadrato verrà colpito",
+              "num": 1
+            },
+            "substitute": ["square"]
+          },
+          "shootTarget": {
+            "damage": 1,
+            "mark": 1
+          }
+        }
+      }
+    }
+  }
+}

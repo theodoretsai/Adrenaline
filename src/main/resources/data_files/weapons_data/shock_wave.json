@@ -1,0 +1,51 @@
+{
+  "name": "Onda d'urto",
+  "chamber": {
+    "yellow": 1
+  },
+  "effects": {
+    "basic":{
+      "name": "Modalità base",
+      "cost": {
+        "yellow": 1
+      },
+      "subEffect": {
+        "1": {
+          "targetAcq": {
+            "range": {
+              "min": 1,
+              "max": 2
+            },
+            "askPlayer": {
+              "msg": "Seleziona fino a 3 Player su quadrati differenti.",
+              "num": 3,
+              "diffSquare": true
+            }
+          },
+          "shootTarget": {
+            "damage": 1
+          }
+        }
+      }
+    },
+    "alternative": {
+      "name": "Modalità tsunami",
+      "cost": {
+        "yellow": 1
+      },
+      "subEffect": {
+        "1": {
+          "targetAcq": {
+            "range": {
+              "min": 1,
+              "max": 2
+            }
+          },
+          "shootTarget": {
+            "damage": 1
+          }
+        }
+      }
+    }
+  }
+}

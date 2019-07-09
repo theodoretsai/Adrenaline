@@ -1,0 +1,38 @@
+{
+    "teleporter": {
+      "key": 0,
+      "name": "Teletrasporto" ,
+      "occ": {
+        "blue": 2,
+        "red": 2,
+        "yellow": 2
+      }
+    },
+    "newton": {
+      "key": 1,
+      "name": "Raggio Cinetico",
+      "occ": {
+        "blue": 2,
+        "red": 2,
+        "yellow": 2
+      }
+    },
+    "tagback_granade": {
+      "key": 2,
+      "name": "Granata Venom",
+      "occ": {
+        "blue": 2,
+        "red": 2,
+        "yellow": 2
+      }
+    },
+    "targeting_scope": {
+      "key": 3,
+      "name": "Mirino",
+      "occ": {
+        "blue": 2,
+        "red": 2,
+        "yellow": 2
+      }
+    }
+}

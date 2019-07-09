@@ -1,0 +1,79 @@
+{
+  "name": "Lanciarazzi",
+  "chamber": {
+    "red": 1
+  },
+  "effects": {
+    "basic": {
+      "name": "Effetto base",
+      "cost": {
+        "red": 2
+      },
+      "subEffect": {
+        "1": {
+          "targetAcq": {
+            "different": [
+              "mySquare"
+            ],
+            "isVisible": {
+              "visible": true
+            },
+            "askPlayer": {
+              "msg": "Seleziona 1 Player visibile",
+              "num": 1
+            }
+          },
+          "shootTarget": {
+            "damage": 2
+          },
+          "moveTarget": {
+            "step": 1
+          }
+        }
+      }
+    },
+    "extraMove": {
+      "name": "Razzi portatili",
+      "cost": {
+        "blue": 1
+      },
+      "subEffect": {
+        "1": {
+          "targetAcq": {
+            "substitute": [
+              "me"
+            ]
+          },
+          "moveTarget": {
+            "step": 2
+          }
+        }
+      }
+    },
+    "addOne": {
+      "name": "Testata a frammentazione",
+      "cost": {
+        "yellow": 1
+      },
+      "subEffect": {
+        "1": {
+          "targetAcq": {
+            "equal": [
+              "last"
+            ]
+          }},
+          "2": {
+            "targetAcq": {
+              "substitute": [
+                "oldSquare",
+                "last"
+              ]
+            },
+            "shootTarget": {
+              "damage": 1
+            }
+          }
+        }
+      }
+    }
+  }

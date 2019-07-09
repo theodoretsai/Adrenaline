@@ -1,0 +1,41 @@
+{
+  "name": "Falce Protonica",
+  "chamber": {
+    "blue": 1
+  },
+  "effects": {
+    "basic": {
+      "name": "Modalità base",
+      "cost": {
+        "blue": 1
+      },
+      "subEffect": {
+        "1": {
+          "targetAcq": {
+            "equal": ["mySquare"]
+          },
+          "shootTarget": {
+            "damage": 1
+          }
+        }
+      }
+    },
+    "alternative": {
+      "name": "modalità mietitore",
+      "cost": {
+        "blue": 1,
+        "red": 1
+      },
+      "subEffect": {
+        "1": {
+          "targetAcq": {
+            "equal": ["mySquare"]
+          },
+          "shootTarget": {
+            "damage": 2
+          }
+        }
+      }
+    }
+  }
+}

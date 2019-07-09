@@ -1,0 +1,51 @@
+{
+  "name": "Fucile laser",
+  "chamber": {
+    "yellow": 1
+  },
+  "effects": {
+    "basic": {
+      "name": "Modalità base",
+      "cost": {
+        "yellow": 2,
+        "blue": 1
+      },
+      "subEffect": {
+        "1": {
+          "targetAcq": {
+            "direction": {
+              "wallBang": true
+            },
+            "askPlayer": {
+              "msg": "Seleziona un player sulla direzione scelta",
+              "num": 1
+            }
+          },
+          "shootTarget": {
+            "damage": 3
+          }
+        }
+      }
+    },
+    "alternative": {
+      "name": "Modalità perforazione",
+      "cost": {},
+      "subEffect": {
+        "1": {
+          "targetAcq": {
+            "direction": {
+              "wallBang": true
+            },
+            "askPlayer": {
+              "msg": "Seleziona 2 player sulla direzione scelta",
+              "num": 2
+            }
+          },
+          "shootTarget": {
+            "damage": 2
+          }
+        }
+      }
+    }
+  }
+}

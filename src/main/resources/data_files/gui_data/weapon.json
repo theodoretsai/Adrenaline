@@ -1,0 +1,86 @@
+{
+  "distruttore": {
+    "path": "distruttore.png",
+    "info": "distruttore.png"
+  },
+  "mitragliatrice":{
+    "path": "mitragliatrice.png",
+    "info": "mitragliatrice.png"
+  },
+  "torpedine":{
+    "path": "torpedine.png",
+    "info": "torpedine.png"
+  },
+  "fucile al plasma":{
+    "path": "fucile_al_plasma.png",
+    "info": "fucile_al_plasma.png"
+  },
+  "fucile di precisione":{
+    "path": "fucile_di_precisione.png",
+    "info": "fucile_di_precisione.png"
+  },
+  "falce protonica":{
+    "path": "falce_protonica.png",
+    "info": "falce_protonica.png"
+  },
+  "raggio traente":{
+    "path": "raggio_traente.png",
+    "info": "raggio_traente.png"
+  },
+  "cannone vortex":{
+    "path": "cannone_vortex.png",
+    "info": "cannone_vortex.png"
+  },
+  "vulcanizzatore":{
+    "path": "vulcanizzatore.png",
+    "info": "vulcanizzatore.png"
+  },
+  "razzo termico":{
+    "path": "razzo_termico.png",
+    "info": "razzo_termico.png"
+  },
+  "raggio solare":{
+    "path": "raggio_solare.png",
+    "info": "raggio_solare.png"
+  },
+  "lanciafiamme":{
+    "path": "lanciafiamme.png",
+    "info": "lanciafiamme.png"
+  },
+  "lanciagranate":{
+    "path": "lanciagranate.png",
+    "info": "lanciagranate.png"
+  },
+  "lanciarazzi":{
+    "path": "lanciarazzi.png",
+    "info": "lanciarazzi.png"
+  },
+  "fucile laser":{
+    "path": "fucile_laser.png",
+    "info": "fucile_laser.png"
+  },
+  "spada fotonica":{
+    "path": "spada_fotonica.png",
+    "info": "spada_fotonica.png"
+  },
+  "zx-2":{
+    "path": "zx_2.png",
+    "info": "zx_2.png"
+  },
+  "fucile a pompa":{
+    "path": "fucile_a_pompa.png",
+    "info": "fucile_a_pompa.png"
+  },
+  "cyberguanto":{
+    "path": "cyberguanto.png",
+    "info": "cyberguanto.png"
+  },
+  "onda d'urto":{
+    "path": "onda_d'urto.png",
+    "info": "onda_d'urto.png"
+  },
+  "martello ionico":{
+    "path": "martello_ionico.png",
+    "info": "martello_ionico.png"
+  }
+}
