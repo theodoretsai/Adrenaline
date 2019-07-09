@@ -1,0 +1,11 @@
+/*
+!.gitignore
+!README.md
+!pom.xml
+!resources/
+!deliverables/
+!data_files/
+!manifest/
+!out/
+!client_manifest/
+!src/
