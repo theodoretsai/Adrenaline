@@ -461,12 +461,12 @@ public class ServerCommManager  extends Thread implements View {
 
     public void sendsUpdate(String s){
         updateBuffer = s;
-        if(owner.isInactive()||owner.isDisconnected()) {
+        if(owner.isInactive()||owner.isDisconnected()||(rmi && rmiClient==null)) {
             return;
         }
         setInUse(true);
         try{
-            if (rmi && rmiClient != null) {
+            if (rmi) {
                 rmiClient.updateModel(s);
             }
             else {
@@ -482,6 +482,10 @@ public class ServerCommManager  extends Thread implements View {
     public void handleDisconnection(){
         owner.setDisconnected(true);
         owner.setInactive(true);
+
+        this.rmiHandler=null;
+        this.rmiClient=null;
+        this.rmi=false;
         System.err.println(owner.getUsername()+CLIENT_UNREACHABLE);
 
     }
@@ -558,9 +562,11 @@ public class ServerCommManager  extends Thread implements View {
                 } catch (InterruptedException d) {}
             }
             if(isRmi()) {
-                while (rmiHandler.getViewClient() == null) ;
+                while (rmiHandler.getViewClient() == null);
+                System.out.println("view set");
                 rmiClient=rmiHandler.getViewClient();
             }
+            setInactive(false);
             sendsUpdate(updateBuffer);
             this.run();
         }
@@ -580,7 +586,7 @@ public class ServerCommManager  extends Thread implements View {
         return rmi;
     }
 
-    public synchronized void setRmi(boolean rmi) {
+    public void setRmi(boolean rmi) {
         this.rmi = rmi;
     }
 
@@ -638,7 +644,6 @@ public class ServerCommManager  extends Thread implements View {
         if(b.isRmi()){
             this.rmiHandler=(RmiClientHandler)b;
             this.rmi=true;
-            this.rmiClient=((RmiClientHandler) b).getViewClient();
             System.out.println(PURPLE+owner.getCharacter()+" reconnected"+RESET);
         }else{
             this.socketClient=(SocketClientHandler)b;
@@ -646,6 +651,5 @@ public class ServerCommManager  extends Thread implements View {
             System.out.println(CYAN+owner.getCharacter()+" reconnected"+RESET);
         }
         setDisconnected(false);
-        setInactive(false);
     }
 }
